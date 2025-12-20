@@ -1,0 +1,240 @@
+body{
+    position: relative;
+}
+.pre-loader {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background-sky);
+    z-index: 9999;
+}
+
+.pre-loader .h-logo::after {
+    display: none;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+nav {
+    display: none;
+    height: 80vh;
+    width: 250px;
+    z-index: 990;
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    left: 10px;
+    background: var(--black);
+    border: 1px solid black;
+    padding: 10px 20px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+nav.show {
+    display: block;
+}
+
+nav::-webkit-scrollbar {
+    display: none;
+}
+
+nav ul i {
+    width: 30px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul .drop-row {
+    width: 100%;
+    position: relative;
+    padding: 14px 0px 14px 0px;
+}
+
+nav ul .drop-down {
+    display: inline-block;
+    height: 7px;
+    width: 7px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+nav ul .drop-box {
+    display: none;
+    margin-left: 50px;
+}
+
+.drop-down.active {
+    transform: rotate(-45deg);
+    transition: transform 0.6s ease;
+}
+
+.drop-box.show {
+    max-width: 400px;
+    display: block;
+    opacity: 1;
+}
+
+
+.h-logo {
+    width: 245px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background: var(--background-white);
+    padding-left: 10px;
+    position: relative;
+}
+
+.h-logo::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 60px solid var(--background-white);
+    border-top: 60px solid transparent;
+    transform: rotate(90deg);
+    z-index: 9;
+    left: 100%;
+}
+
+.logo_text {
+    width: 140px;
+}
+
+.logo_text img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.logo {
+    width: 50px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.header-row {
+    width: 90%;
+    height: 55px;
+    background: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10%;
+}
+
+.h-input {
+    color: var(--background-white);
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.h-input input {
+    width: 50px;
+}
+
+.h-input input::placeholder {
+    color: var(--background-black);
+}
+
+.h-input .input-box {
+    width: 100px;
+    height: 30px;
+    background: var(--background-white);
+    color: var(--background-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.h-activity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+
+}
+
+.h-activity-child {
+    display: flex;
+    column-gap: 10px;
+}
+
+.h-activity-child .act-add {
+    width: 20px;
+    border-radius: 4px;
+    background-color: var(--background-black);
+    color: var(--background-white);
+    display: grid;
+    place-items: center;
+    font-size: 12px;
+}
+
+
+@media screen and (max-width:768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .h-logo {
+        width: 20%;
+        padding: 0px;
+        align-items: start;
+        height: 50px;
+    }
+
+    .logo_text {
+        display: none;
+    }
+
+    .h-logo::after {
+        z-index: 99;
+        border-left: 50px solid var(--background-white);
+        border-top: 50px solid transparent;
+    }
+
+    .header-row {
+        width: 100%;
+        position: relative;
+        background: var(--background-sky);
+    }
+
+    .h-activity {
+        position: absolute;
+        right: 10px;
+        bottom: 100%;
+        right: 0;
+        width: 80%;
+        background: var(--background);
+        height: 50px;
+    }
+
+
+    nav {
+        display: none;
+        height: 75vh;
+    }
+}

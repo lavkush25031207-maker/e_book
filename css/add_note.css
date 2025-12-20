@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* container */
+.container{
+    width: 600px;
+    height: 500px;
+    background: #d6d6d6;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* header */
+.top-head{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    color: #fff;
+    position: relative;
+}
+
+.top-head span{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.top-head i{
+    position:absolute;
+    cursor: pointer;
+    font-size: 18px;
+    right: 20px;
+}
+
+/* main area */
+.main-sms{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* background-color: rgba(103, 106, 108, 0.25); */
+    border: 1px solid silver;
+}
+
+.warraper{
+    height: 70%;
+    margin: 20px;
+}
+
+.main-sms select{
+    border: unset;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+.main-sms textarea{
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    resize: none;
+    border: 1px solid #ccc;
+}
+
+
+/* footer */
+.button{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 0 15px;
+    background-color: rgba(103, 106, 108, 0.25);
+    border-top: 1px solid #fff;
+}
+
+.button button{
+    padding: 6px 18px;
+    border: 1px solid #999;
+    background: #f2f2f2;
+    cursor: pointer;
+}
+
+.button button:hover{
+    background: #e0e0e0;
+}

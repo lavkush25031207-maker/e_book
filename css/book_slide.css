@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.main-continer {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.flipbook {
+    width: 1000px;
+    height: 550px;
+    position: relative;
+}
+
+.flipbook .hard {
+    background: #c0392b !important;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+}
+
+.flipbook .hard small {
+    font-style: italic;
+    font-weight: lighter;
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+.flipbook .page {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.page img {
+    width: 95%;
+    object-fit: cover;
+    margin: auto;
+}
+
+.flipbook .page small {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.slide {
+    cursor: pointer;
+}
+
+.main-continer .button {
+    all: unset;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+button img {
+    height: 100%;
+    width: 100%;
+}
+
+#previous {
+    left: 7%;
+}
+
+#next {
+    right: 7%;
+}
+
+
+/* Purana display:none wala code hata kar ye likhein */
+@media screen and (max-width: 768px) {
+    .flipbook {
+        width: 100vw;
+        /* height: 80vh; */
+    }
+
+    .main-continer {
+        height: 75vh;
+    }
+
+    .main-continer .button {
+        top: unset;
+        bottom: 8%;
+        margin: unset;
+        z-index: 9;
+    }
+
+    #previous {
+        left: 7%;
+    }
+
+    #next {
+        right: 7%;
+    }
+}
