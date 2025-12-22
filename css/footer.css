@@ -178,6 +178,7 @@ input[type="color"] {
     position: absolute;
     left: 10px;
     bottom: 0;
+    z-index: 9999;
 }
 
 .tools.show {
@@ -185,14 +186,14 @@ input[type="color"] {
 }
 
 /* ===== HEADER ===== */
-.header {
+.header-tool {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 14px;
 }
 
-.header h3 {
+.header-tool h3 {
     font-size: 18px;
     font-weight: 600;
 }
