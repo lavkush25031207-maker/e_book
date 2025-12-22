@@ -217,6 +217,7 @@ nav ul .drop-box {
         z-index: 99;
         border-left: 50px solid var(--background-white);
         border-top: 50px solid transparent;
+        left: 100%;
     }
 
     .header-row {
