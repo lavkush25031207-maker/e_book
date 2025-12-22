@@ -97,13 +97,11 @@
         justify-content: flex-end;
     }
 
-    .icon-row {
-        align-items: flex-end;
-        width: 85%;
-        /* padding-right: unset; */
+    .icon-row ul{
+        justify-content: start;
     }
 
     .icon-row ul .home {
-        left: -65px;
+        position: unset;;
     }
 }
