@@ -27,7 +27,41 @@
     height: 55px;
     width: 55px;
     border-radius: 50%;
+    position: relative;
 
+}
+
+.icon-row li:hover .tooltip-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.icon-row .tooltip-text {
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
 }
 
 .icon-row li img {
