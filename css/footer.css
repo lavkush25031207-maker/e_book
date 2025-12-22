@@ -38,7 +38,7 @@
 
 .icon-row .tooltip-text {
     position: absolute;
-    bottom: 120%;
+    bottom: 118%;
     left: 50%;
     transform: translateX(-50%);
     background: black;
@@ -56,10 +56,10 @@
 .tooltip-text::after {
     content: "";
     position: absolute;
-    top: 100%;
+    top: 98%;
     left: 50%;
     transform: translateX(-50%);
-    border-width: 5px;
+    border-width: 10px;
     border-style: solid;
     border-color: black transparent transparent transparent;
 }
@@ -69,9 +69,9 @@
     height: 100%;
 }
 
-.home {
+.icon-row ul .home {
     position: absolute;
-    left: 0;
+    left: 20px;
 }
 
 .zoom {
