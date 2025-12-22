@@ -29,7 +29,7 @@ nav {
     width: 250px;
     z-index: 990;
     position: absolute;
-    top: 100%;
+    top: 125%;
     bottom: 0;
     left: 10px;
     background: var(--black);

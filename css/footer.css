@@ -90,6 +90,263 @@
     z-index: 9999;
 }
 
+.tools-panel {
+    display: none;
+    width: 260px;
+    background: #3b3b3b;
+    border-radius: 10px;
+    padding: 15px;
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    left: 10px;
+}
+
+.tools-panel.show {
+    display: block;
+}
+
+/* Header */
+.tools-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.tools-header h3 {
+    font-size: 18px;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Buttons */
+.tool-btn {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(#4c4c4c, #2f2f2f);
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tool-btn.active {
+    background: linear-gradient(#3d7db8, #1e4f80);
+}
+
+.tool-btn:hover {
+    opacity: 0.9;
+}
+
+/* Color dropdown */
+select,
+input[type="color"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Page selection */
+.page-label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* ===== PANEL ===== */
+.tools {
+    display: none;
+    width: 260px;
+    background: linear-gradient(#4a4a4a, #2b2b2b);
+    border-radius: 10px;
+    padding: 14px;
+    color: #fff;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+}
+
+.tools.show {
+    display: block;
+}
+
+/* ===== HEADER ===== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.header h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.close {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(#5a5a5a, #3a3a3a);
+    color: #fff;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+/* Active (Highlight) */
+.btn.active {
+    background: linear-gradient(#3f7fb8, #255a8d);
+}
+
+/* Hover */
+.btn:hover {
+    filter: brightness(1.1);
+}
+
+/* ===== COLOR SELECT ===== */
+.color-box {
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(135deg, #5a5cff, #1f1f6e);
+    border-radius: 6px;
+    margin-bottom: 14px;
+}
+
+/* ===== PAGE SELECTION ===== */
+.label {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+
+.overlay {
+    display: none;
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999999;
+}
+
+.overlay.show{
+    display: flex;
+}
+/* ===== MODAL ===== */
+.modal {
+    width: 620px;
+    background: #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== HEADER ===== */
+.modal-header {
+    background: #3c3c3c;
+    color: #fff;
+    padding: 14px 16px;
+    position: relative;
+}
+
+.modal-header h3 {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.modal-header p {
+    font-size: 12px;
+    opacity: 0.85;
+}
+
+.close-x {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ===== BODY ===== */
+.modal-body {
+    background: #fff;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.spot {
+    cursor: pointer;
+}
+
+.circle {
+    background: #000;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+.small {
+    width: 70px;
+    height: 70px;
+}
+
+.medium {
+    width: 110px;
+    height: 110px;
+}
+
+.large {
+    width: 150px;
+    height: 150px;
+}
+
+.spot span {
+    color: #1e88e5;
+    font-size: 16px;
+}
+
+/* ===== FOOTER ===== */
+.modal-footer {
+    padding: 12px;
+    text-align: right;
+}
+
+.modal-footer button {
+    padding: 6px 14px;
+    border: 1px solid #999;
+    background: #eee;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 @media screen and (max-width:768px) {
     .footer {
         display: flex;
@@ -97,11 +354,12 @@
         justify-content: flex-end;
     }
 
-    .icon-row ul{
+    .icon-row ul {
         justify-content: start;
     }
 
     .icon-row ul .home {
-        position: unset;;
+        position: unset;
+        ;
     }
 }

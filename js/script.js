@@ -7,3 +7,4 @@ import"./footer.js";
 import"./zoom.js";
 import"./full_screen.js"
 import"./bg_sound_brightness.js"
+import"./pan_highlight.js"
