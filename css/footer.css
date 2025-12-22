@@ -14,8 +14,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 20px;
-    row-gap: 20px;
+    column-gap: 10px;
+    row-gap: 10px;
     flex-wrap: wrap;
 }
 
@@ -85,7 +85,7 @@
     padding: 10px 25px;
     background-color: grey;
     border-radius: 8px;
-    bottom: -60px;
+    bottom: 20px;
     border: 1px solid silver;
     z-index: 9999;
 }

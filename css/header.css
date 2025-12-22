@@ -1,6 +1,7 @@
-body{
+body {
     position: relative;
 }
+
 .pre-loader {
     position: absolute;
     height: 100%;
@@ -32,7 +33,7 @@ nav {
     bottom: 0;
     left: 10px;
     background: var(--black);
-    border: 1px solid black;
+    border: 1px solid silver;
     padding: 10px 20px;
     overflow-y: auto;
     scroll-behavior: smooth;
@@ -58,6 +59,8 @@ nav ul .drop-row {
     width: 100%;
     position: relative;
     padding: 14px 0px 14px 0px;
+    border-bottom: 1px solid silver;
+    border-width: 100%;
 }
 
 nav ul .drop-down {
@@ -235,6 +238,7 @@ nav ul .drop-box {
 
     nav {
         display: none;
-        height: 75vh;
+        height: 450px;
+        top: 320%;
     }
 }

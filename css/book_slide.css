@@ -12,12 +12,13 @@
     justify-content: center;
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 .flipbook {
     width: 1000px;
     height: 550px;
-    position: relative;
+    /* position: relative; */
 }
 
 .flipbook .hard {
@@ -87,8 +88,7 @@ button img {
 /* Purana display:none wala code hata kar ye likhein */
 @media screen and (max-width: 768px) {
     .flipbook {
-        width: 100vw;
-        /* height: 80vh; */
+        /* width: 100vw; */
     }
 
     .main-continer {
@@ -97,7 +97,7 @@ button img {
 
     .main-continer .button {
         top: unset;
-        bottom: 24%;
+        bottom: 2%;
         margin: unset;
         z-index: 9;
     }

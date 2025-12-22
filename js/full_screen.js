@@ -16,6 +16,30 @@ function closeFullscreen() {
 
 
 
+
+const mediaQuery = window.matchMedia("(max-width: 768px)");
+function handleMobile(e) {
+    if (e.matches) {
+        // ✅ Mobile / Tablet (<=768px)
+        console.log("Screen 768px ya usse chhoti hai");
+        
+        // yaha mobile wala JS likho
+    } else {
+        // ✅ Desktop (>768px)
+        console.log("Screen 768px se badi hai");
+        
+        // yaha desktop wala JS
+    }
+}
+
+// Page load par check
+handleMobile(mediaQuery);
+
+// Screen resize par check
+mediaQuery.addEventListener("change", handleMobile);
+
+
+
 var book_only = document.getElementById("book_only");
 var header = document.getElementsByTagName("header")[0];
 var footer = document.getElementsByTagName("footer")[0];
@@ -27,7 +51,7 @@ book_only.onclick = () => {
     full_screen.style.position = "relative"
     header.style.display = "none";
     footer.style.display = "none";
-    book.style.height = "90vh";
+    book.style.height = "690px";
     gthome.style.display = "block";  // now works
     gthome.style.zIndex = "9999999";
 };
