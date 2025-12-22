@@ -78,17 +78,16 @@
     transform: scale(1.5);
 }
 
+
 .gthome {
     position: absolute;
     display: none;
-    width: 100px;
-    padding: 0 10px;
+    padding: 10px 25px;
     background-color: grey;
     border-radius: 8px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+    bottom: -60px;
+    border: 1px solid silver;
+    z-index: 9999;
 }
 
 @media screen and (max-width:768px) {
@@ -104,7 +103,7 @@
         /* padding-right: unset; */
     }
 
-    .home {
-        left: -40px;
+    .icon-row ul .home {
+        left: -65px;
     }
 }

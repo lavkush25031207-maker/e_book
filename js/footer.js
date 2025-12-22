@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-var drop_rows = document.querySelectorAll(".drop-row");
 
+var drop_rows = document.querySelectorAll(".drop-row");
 drop_rows.forEach((row) => {
     row.addEventListener("click", () => {
         // Get the next sibling drop-box of the clicked row
