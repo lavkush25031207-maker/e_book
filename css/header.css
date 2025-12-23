@@ -96,7 +96,7 @@ nav ul .drop-box {
 
 .h-logo {
     width: 245px;
-    height: 60px;
+    height: 11vh;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -110,8 +110,8 @@ nav ul .drop-box {
     position: absolute;
     width: 0;
     height: 0;
-    border-left: 60px solid var(--background-white);
-    border-top: 60px solid transparent;
+    border-left: 11vh solid var(--background-white);
+    border-top: 11vh solid transparent;
     transform: rotate(90deg);
     z-index: 9;
     left: 100%;
@@ -139,7 +139,7 @@ nav ul .drop-box {
 
 .header-row {
     width: 90%;
-    height: 55px;
+    height: 10vh;
     background: var(--background);
     display: flex;
     align-items: center;

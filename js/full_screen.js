@@ -45,13 +45,14 @@ var header = document.getElementsByTagName("header")[0];
 var footer = document.getElementsByTagName("footer")[0];
 var book = document.getElementsByClassName("main-continer")[0];
 var gthome = document.getElementsByClassName("gthome")[0]; // <-- add [0]
+// var slide = document.querySelectorAll(".slide");
 
 book_only.onclick = () => {
     openFullscreen()
     full_screen.style.position = "relative"
     header.style.display = "none";
     footer.style.display = "none";
-    book.style.height = "690px";
+    book.style.height = "100vh";
     gthome.style.display = "block";  // now works
     gthome.style.zIndex = "9999999";
 };

@@ -17,7 +17,7 @@
 
 .flipbook {
     width: 1000px;
-    height: 550px;
+    height: 76vh !important;
     /* position: relative; */
 }
 
@@ -46,7 +46,7 @@
 }
 
 .page img {
-    width: 95%;
+    width: 85%;
     object-fit: cover;
     margin: auto;
 }

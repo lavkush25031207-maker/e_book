@@ -37,7 +37,7 @@ full_screen.onclick = () => {
     full_screen.style.position = "relative"
     header.style.display = "none";
     footer.style.display = "none";
-    book.style.height = "690px";
+    book.style.height = "100vh";
     gthome.style.display = "block";  // now works
     gthome.style.zIndex = "9999999";
 
