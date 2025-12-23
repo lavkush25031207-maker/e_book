@@ -225,8 +225,33 @@
       <ul>
         <li class="home" id="home"><img src="img/footer-icons/home.png" alt="not_find"> <span class="tooltip-text">Table
             fo content</span></li>
-        <li><a href="add_note.html"><img src="img/footer-icons/1.png" alt="not_find"></a> <span class="tooltip-text">Add
-            Note</span></li>
+        <li class="add_note"><img src="img/footer-icons/1.png" alt="not_find"><span class="tooltip-text">Add
+            Note</span>
+          <div class="add-container">
+            <!-- Header -->
+            <div class="top-head">
+              <span>Add note</span>
+              <i class="fa-solid fa-xmark" id="close1"></i>
+            </div>
+            <!-- Main Content -->
+            <div class="main-sms">
+              <div class="warraper">
+                <select>
+                  <option>Page -1</option>
+                  <option>Page -2</option>
+                  <option>Page -3</option>
+                </select>
+                <textarea placeholder="Write your note here..."></textarea>
+              </div>
+            </div>
+            <!-- Footer Buttons -->
+            <div class="add_btn">
+              <button id="close">Close</button>
+              <button id="save_button">Save</button>
+            </div>
+
+          </div>
+        </li>
         <li id="zoom_in"><img src="img/footer-icons/zoom_in.png" alt="not_find"><span class="tooltip-text">Zoom
             in</span></li>
         <li id="zoom_out"><img src="img/footer-icons/zoom_out.png" alt="not_find"><span class="tooltip-text">Zoom
@@ -244,7 +269,21 @@
         <li id="pen"><img src="img/footer-icons/8.png" alt="not_find"> <span class="tooltip-text">Pen</span></li>
         <li id="hightlighter"><img src="img/footer-icons/9.png" alt="not_find"><span
             class="tooltip-text">Hightlighter</span></li>
-        <li><img src="img/footer-icons/10.png" alt=""><span class="tooltip-text">Thumbnail</span></li>
+        <li id="thumbnail"><img src="img/footer-icons/10.png" alt=""><span class="tooltip-text">Thumbnail</span>
+          <div class="thumb-parent" id="thumb-parent">
+            <i class="fa-solid fa-xmark" id="thumb-close"></i>
+            <div class="thumb-slide"><img src="resources/book/file-page1.jpg" alt="not_find"></div>
+            <div class="thumb-slide"><img src="resources/book/file-page2.jpg" alt="not_find"></div>
+            <div class="thumb-slide"><img src="resources/book/file-page3.jpg" alt="not_find"></div>
+            <div class="thumb-slide"><img src="resources/book/file-page4.jpg" alt="not_find"></div>
+            <div class="thumb-slide"><img src="resources/book/file-page5.jpg" alt="not_find"></div>
+            <div class="thumb-slide"><img src="resources/book/file-page6.jpg" alt="not_find"></div>
+            <div class="thumb-slide"><img src="resources/book/file-page7.jpg" alt="not_find"></div>
+            <div class="thumb-slide"><img src="resources/book/file-page8.jpg" alt="not_find"></div>
+            <div class="thumb-slide"><img src="resources/book/file-page9.jpg" alt="not_find"></div>
+            <div class="thumb-slide"><img src="resources/book/file-page10.jpg" alt="not_find"></div>
+          </div>
+        </li>
       </ul>
     </div>
   </footer>

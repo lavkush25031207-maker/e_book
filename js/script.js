@@ -1,10 +1,11 @@
-import"./add_note.js";
+import"./slide.js";
 import"./jquery.js";
 import"./turn.js";
 import"./my.js";
-import"./slide.js";
 import"./footer.js";
 import"./zoom.js";
 import"./full_screen.js"
 import"./bg_sound_brightness.js"
 import"./pan_highlight.js"
+import"./add_note.js";
+import"./thumbnail.js"

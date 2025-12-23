@@ -50,6 +50,7 @@
     opacity: 0;
     visibility: hidden;
     transition: 0.3s;
+    z-index: 9999;
 }
 
 /* Tooltip arrow */
@@ -147,6 +148,7 @@
 
 .tool-btn:hover {
     opacity: 0.9;
+
 }
 
 /* Color dropdown */
@@ -361,6 +363,5 @@ input[type="color"] {
 
     .icon-row ul .home {
         position: unset;
-        ;
     }
 }
