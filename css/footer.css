@@ -357,6 +357,13 @@ input[type="color"] {
         justify-content: flex-end;
     }
 
+    .icon-row li{
+        position: unset;
+    }
+
+    .tooltip-text{
+        display: none;
+    }
     .icon-row ul {
         justify-content: start;
     }

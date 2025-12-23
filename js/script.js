@@ -9,3 +9,5 @@ import"./bg_sound_brightness.js"
 import"./pan_highlight.js"
 import"./add_note.js";
 import"./thumbnail.js"
+import"./page_index.js"
+import"./book_hightlight.js"

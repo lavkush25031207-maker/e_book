@@ -1,17 +1,27 @@
-// Elements
-const addNote = document.querySelector(".add_note");
+// ---------- ELEMENTS ----------
+const addNoteBtns = document.querySelectorAll("#addnode, .add_note");
 const container = document.querySelector(".add-container");
 const closeBtns = document.querySelectorAll("#close, #close1");
 const saveBtn = document.getElementById("save_button");
 const textarea = document.querySelector(".add-container textarea");
 const pageSelect = document.querySelector(".add-container select");
+const notesCount = document.getElementById("notes");
 
-// Add Note → OPEN
-addNote.addEventListener("click", () => {
-  container.classList.add("show");
+// ---------- LOAD NOTES COUNT ON PAGE LOAD ----------
+function updateNotesCount() {
+  const notes = JSON.parse(localStorage.getItem("notes")) || [];
+  notesCount.innerText = notes.length;
+}
+updateNotesCount();
+
+// ---------- OPEN ADD NOTE POPUP ----------
+addNoteBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    container.classList.add("show");
+  });
 });
 
-// Close buttons → CLOSE
+// ---------- CLOSE POPUP ----------
 closeBtns.forEach(btn => {
   btn.addEventListener("click", (e) => {
     e.stopPropagation();
@@ -19,7 +29,7 @@ closeBtns.forEach(btn => {
   });
 });
 
-// Save button → SAVE + CLOSE
+// ---------- SAVE NOTE ----------
 saveBtn.addEventListener("click", (e) => {
   e.stopPropagation();
 
@@ -31,24 +41,23 @@ saveBtn.addEventListener("click", (e) => {
     return;
   }
 
-  // Note object
   const noteData = {
     page: page,
     text: noteText,
     time: new Date().toLocaleString()
   };
 
-  // Get existing notes
   let notes = JSON.parse(localStorage.getItem("notes")) || [];
-
-  // Save note
   notes.push(noteData);
   localStorage.setItem("notes", JSON.stringify(notes));
 
-  // Reset textarea
+  // reset
   textarea.value = "";
 
-  // Close container
+  // update counter
+  updateNotesCount();
+
+  // close popup
   container.classList.remove("show");
 
   alert("Note saved successfully ✅");
