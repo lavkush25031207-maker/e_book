@@ -52,7 +52,8 @@ book_only.onclick = () => {
     full_screen.style.position = "relative"
     header.style.display = "none";
     footer.style.display = "none";
-    book.style.height = "100vh";
+    book.style.height = "90vh";
+    book.style.marginTop= "30px"
     gthome.style.display = "block";  // now works
     gthome.style.zIndex = "9999999";
 };
@@ -65,4 +66,5 @@ gthome.onclick = () => {
     footer.style.display = "";
     book.style.height = "";
     gthome.style.display = "none";
+    book.style.marginTop = ""
 }

@@ -25,11 +25,11 @@ body {
 
 nav {
     display: none;
-    height: 600px;
+    height: 75vh;
     width: 250px;
     z-index: 990;
     position: absolute;
-    top: 100%;
+    top: 115%;
     bottom: 0;
     left: 10px;
     background: var(--black);
@@ -239,7 +239,7 @@ nav ul .drop-box {
 
     nav {
         display: none;
-        height: 450px;
+        height: 600px;
         top: 320%;
     }
 }
